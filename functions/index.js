@@ -9,6 +9,7 @@ app.post('/cars', newCar)
 app.patch('/cars/:carId', updateCar)
 app.delete('/cars/:carId', deleteCar)
 
-exports.app = functions.https.onRequest(app)
+// exports.app = functions.https.onRequest(app)
+app.listen(5001)
 
 
